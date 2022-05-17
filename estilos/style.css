@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+
+/*HEADER*/
+
+header{
+    background-color: rgb(0, 0, 102);
+    height: 120px;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "logo navbar redes";
+}
+
+.thinHeader{
+    height: 60px;
+}
+
+.logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    grid-area: navbar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redesHeader{
+    grid-area: redes;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.thinHeader nav ul li{
+    padding: 0 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    border: 3px solid black;
+    padding: 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    transition: all 0.3s;
+}
+
+.thinHeader nav ul li a{
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 0 10px;
+}
+
+.redes{
+    margin-right: 20px;
+}
+
+.thinHeader .redes{
+    width: 20px;
+    height: 20px;
+}
+
+.thinHeader .mlLogo{
+    width: 100px;
+    height: 60px;
+}
+
+.selected{
+    background-color: rgb(0, 0, 65);
+}
+
+nav ul li a:hover{
+    background-color: rgb(0, 0, 65);
+    font-size: 30px;
+}
+
+.thinHeader nav ul li a:hover{
+    font-size: 25px;
+}
+
+.redesHeader a:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*BACKGROUNDS*/
+
+.index{
+    background-image: url("../img/indexbg.png");
+    background-size: cover;
+}
+
+.servicios{
+    background-image: url("../img/servicesbg.jfif");
+    background-size: contain;
+    background-position: center;
+}
+
+.bg{
+    background-color: rgb(202, 190, 245);
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+
+
+/*INICIO*/
+
+.mantEd{
+    margin-top: 30px;
+    color: white;
+    font-size: 80px;
+}
+
+.sub1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.sub2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+}
+
+
+.pagoTitle{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.pagoGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". pagoBox .";
+}
+
+.pagoBox{
+    margin: 10px 0 15px 0;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.521);
+    height: 76px;
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: pagoBox;
+}
+    
+.mediosdePago{   
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.mediosdePago figure{
+    display: flex;
+    align-items: center;
+}
+
+.mediosdePago figcaption{
+    margin-left: 5px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*SERVICIOS*/
+
+.texto{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 25px;
+    margin-left: 15px;
+    color: white;
+    text-align: center;
+}
+
+figcaption{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+}
+
+.servicio{
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.356);
+    padding:10px;
+    width: 100px;
+    height: 120px;
+    margin: 20px;
+    transition: all 0.2s;
+}
+
+.servicio:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+    
+}
+
+.trabajosGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". trabajos .";
+}
+
+#trabajos{
+    margin: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.233);
+    grid-area: trabajos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 900px;
+}
+
+#trabajos a div figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 120px;
+}
+
+#trabajos a{
+    text-decoration: none;
+    color: black;
+}
+
+#infoServicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". info .";
+}
+
+.infoGrid{
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.infoGrid .infoContainer{
+    color: white;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.582);
+    margin: 20px;
+    height: 350px;
+    width: 900px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    
+#infoServicios a{
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: black;
+    text-align: center;
+    font-family:  'PT Sans Narrow', sans-serif;
+    text-decoration: none;
+}
+
+#infoServicios a:hover{
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+.divInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 300px;
+}
+
+.divInfo h2{
+    font-size: 30px;
+    text-align: left;
+}
+
+.fotoServicios{
+    border: 5px solid black;
+}
+
+.divInfo ul li{
+    font-family:  'PT Sans Narrow', sans-serif;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/*NOSOTROS*/
+
+.info{
+    margin: 35px 0;
+    padding: 0 100px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+#nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "reviews map";
+}
+
+.reviews{
+    grid-area: reviews;
+}
+.map{
+    grid-area: map;
+}
+
+.nosotrosGrid{
+    display: flex;
+    justify-content: center;
+}
+
+.nosotrosColumnas{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    padding: 20px;
+    margin-bottom: 38px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 350px;
+}
+
+.nosotrosTitles{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#mapa{
+ text-align: center;
+}
+
+
+
+
+
+
+
+/*PORTFOLIO*/
+
+.algunos{
+    font-size: 35px;
+    margin: 20px;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 20px 200px;
+}
+
+.portfolio h3{
+    text-align: center;
+    font-family:  'PT Sans Narrow', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.fotosPortfolio{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.fotosPortfolio img{
+    margin: 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*CONTACTO*/
+
+.presupuesto{
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 14px;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". form .";
+}
+
+.form article{
+    grid-area: form;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid black;
+    padding: 15px 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    width: 400px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.formButtons{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color: rgb(0, 0, 102);
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    height: 60px;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "whatsappFooter horariosFooter"
+    ;
+}
+
+.horariosFooter h3{
+    text-decoration: underline;
+}
+
+.whatsappFooter{
+    grid-area: whatsappFooter;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    transition: all 0.2s;
+}
+
+#wp{
+    margin-right: 10px;
+}
+
+.horariosFooter{
+    grid-area: horariosFooter;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.divHorarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whatsappFooter a:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES*/
+
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+    
+    /* HEADER*/
+
+    header{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "logo navbar";
+        height: 90px;
+    }
+
+    .redesHeader{
+        display: none;
+    }
+    
+    .logo img{
+        margin-left: 10px;
+        height: 80px;
+    }
+
+    .navbar{
+        justify-content: end;
+        margin-right: 10px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        border: 2px solid black;
+    }
+
+    /*SERVICIOS*/
+
+    .servicio{
+        width: 100px;
+        height: 110px;
+        margin: 8px;
+    }
+
+    #trabajos{
+        width: 750px;
+    }
+
+    .infoGrid .infoContainer{
+        width: 750px;
+    }
+
+    .infoContainer img{
+        width: 350px;
+        height: 250px;
+    }
+    
+    .divInfo{
+        justify-content: space-evenly;
+        width: 300px;
+        height: 250px;
+    }
+ 
+    .fotoServicios{
+        border: 3px solid black;
+    }
+
+    /* NOSOTROS */
+
+    #nosotros{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "reviews"
+        "map";
+    }
+
+    /*FOOTER*/
+
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .whatsappFooter{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width:767px){
+    
+    /* HEADER*/
+
+    header{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "logo"
+        "navbar"
+        ;
+    }
+
+    .thinHeader{
+        height: 110px;
+    }
+
+    .redesHeader{
+        display: none;
+    }
+
+    .logo{
+        justify-content: center;
+    }
+
+    .logo img{
+        height: 80px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        border: 2px solid black;
+    }
+
+
+
+    /* INDEX */
+    
+    .index{
+        background-image: url("../img/indexMobilebg.png");
+    }
+
+    .pagoBox{
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+        width: 250px;
+    }
+
+
+    /*SERVICIOS*/
+
+    .texto{
+    font-size: 20px;
+    }
+
+    .servicio{
+        width: 100px;
+        height: 110px;
+    }
+
+    #trabajos{
+        width: 400px;
+    }
+
+    .infoGrid .infoContainer{
+        flex-direction: column-reverse;
+        height: 500px;
+        width: 400px;
+        justify-content: space-evenly; 
+    }
+
+    .infoContainer img{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .divInfo{
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 200px;
+    }
+
+    #infoServicios a{
+        margin-top: 10px;
+    }
+    
+    .fotoServicios{
+        border: 3px solid black;
+    }
+
+
+
+    /* NOSOTROS */
+
+    #nosotros{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "reviews"
+        "map";
+    }
+
+
+
+    /*FOOTER*/
+
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .whatsappFooter{
+        display: none;
+    }
+
+}
