@@ -42,6 +42,7 @@ header{
     justify-content: end;
     align-items: center;
     transition: all 0.2s;
+    margin-right: 3px;
 }
 
 nav ul{

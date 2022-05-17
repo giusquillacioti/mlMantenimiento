@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./estilos/style.css">
     <title>ML Mantenimiento</title>
 </head>
@@ -41,16 +43,16 @@
     </header>
 
     <main>
-        <h1 class="mantEd">Mantenimiento Edilicio</h1>
-        <h2 class="sub1">¡Consultá por tu presupuesto!</h2>
-        <h2 class="sub2">¡Financiación para tus trabajos!</h2>
+        <h1 class="mantEd" data-aos="fade-down">Mantenimiento Edilicio</h1>
+        <h2 class="sub1" data-aos="fade-down">¡Consultá por tu presupuesto!</h2>
+        <h2 class="sub2" data-aos="fade-down">¡Financiación para tus trabajos!</h2>
     </main>
     
     <section>
 
-        <h3 class="pagoTitle">Medios de pago</h3>
+        <h3 class="pagoTitle" data-aos="fade-down">Medios de pago</h3>
 
-        <section class="pagoGrid">
+        <section class="pagoGrid" data-aos="fade-down">
 
             <div class="pagoBox">
 
@@ -96,6 +98,10 @@
         </section>
 
     </footer>
+
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 </html>
