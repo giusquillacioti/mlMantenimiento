@@ -11,6 +11,7 @@ header{
     background-color: rgb(0, 0, 102);
     height: 120px;
     position: sticky;
+    z-index: 9999;
     top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -58,17 +59,17 @@ nav ul li{
     padding: 0 5px;
 }
 
-nav ul li a{
+#navbarNav ul li a{
     text-decoration: none;
     color: white;
     font-size: 25px;
-    border: 3px solid black;
+    border: 2px solid black;
     padding: 10px;
     font-family: 'PT Sans Narrow', sans-serif;
     transition: all 0.3s;
 }
 
-.thinHeader nav ul li a{
+.thinHeader #navbarNav ul li a{
     font-size: 20px;
     border: 2px solid black;
     padding: 0 10px;
@@ -79,8 +80,8 @@ nav ul li a{
 }
 
 .thinHeader .redes{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .thinHeader .mlLogo{
@@ -92,7 +93,7 @@ nav ul li a{
     background-color: rgb(0, 0, 65);
 }
 
-nav ul li a:hover{
+#navbarNav ul li a:hover{
     background-color: rgb(0, 0, 65);
     font-size: 30px;
 }
@@ -218,6 +219,10 @@ h2{
 
 /*SERVICIOS*/
 
+.sub1{
+    margin-top: 20px;
+}
+
 .texto{
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 25px;
@@ -236,8 +241,8 @@ figcaption{
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.356);
     padding:10px;
-    width: 100px;
-    height: 120px;
+    width: 120px;
+    height: 140px;
     margin: 20px;
     transition: all 0.2s;
 }
@@ -401,7 +406,7 @@ figcaption{
 }
 
 #mapa{
- text-align: center;
+    text-align: center;
 }
 
 
@@ -412,12 +417,12 @@ figcaption{
 
 /*PORTFOLIO*/
 
-.algunos{
+.portfolioSubtitle{
     font-size: 35px;
     margin: 20px;
 }
 
-.portfolio{
+/*.portfolio{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -443,11 +448,66 @@ figcaption{
 .fotosPortfolio img{
     margin: 0 15px;
 }
+ */
 
 
 
 
 
+
+
+.portfolioGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "first second"
+    "third fourth";
+}
+
+.gridCarousels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel{
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+}
+
+.carouselStyle{
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.first{
+    grid-area: first;
+}
+
+.second{
+    grid-area: second;
+}
+
+.third{
+    grid-area: third;
+}
+
+.fourth{
+    grid-area: fourth;
+}
+
+.carouselDescriptions{
+    font-size: 20px;
+    text-align: center;
+}
 
 
 
@@ -464,7 +524,7 @@ figcaption{
 
 .form{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
     ". form .";
@@ -474,17 +534,11 @@ figcaption{
     grid-area: form;
     background-color: rgba(0, 0, 0, 0.2);
     border: 3px solid black;
-    padding: 15px 10px;
+    padding: 10px;
     font-family: 'PT Sans Narrow', sans-serif;
-    width: 400px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 10px;
 }
 
-.formButtons{
-    margin-top: 10px;
-}
 
 
 
@@ -501,6 +555,7 @@ footer{
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 14px;
     height: 60px;
+    margin-top: 16px;
     margin-bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -512,6 +567,18 @@ footer{
 
 .horariosFooter h3{
     text-decoration: underline;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.horariosFooter h4{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.whatsappFooter h3{
+    font-size: 18px;
+    margin-bottom: 0;
 }
 
 .whatsappFooter{
@@ -538,13 +605,16 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .whatsappFooter a:hover{
     transform: scale(1.1);
 }
 
-
+.redesFooter{
+    display: none;
+}
 
 
 
@@ -582,14 +652,13 @@ footer{
 
     nav ul li a{
         font-size: 20px;
-        border: 2px solid black;
     }
 
     /*SERVICIOS*/
 
     .servicio{
-        width: 100px;
-        height: 110px;
+        width: 110px;
+        height: 130px;
         margin: 8px;
     }
 
@@ -611,7 +680,7 @@ footer{
         width: 300px;
         height: 250px;
     }
- 
+
     .fotoServicios{
         border: 3px solid black;
     }
@@ -627,11 +696,42 @@ footer{
         "map";
     }
 
+    /* CONTACTO */
+
+    .form{
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
     /*FOOTER*/
 
     footer{
-        display: flex;
+        height: 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "horarios"
+        "redes";
+    }
+
+    .horariosFooter{
+        grid-area: horarios;
         justify-content: center;
+        margin-top: 10px;
+    }
+
+    .redesFooter{
+        display: flex;
+        grid-area: redes;
+        justify-content: center;
+    }
+        .redesFooter figure{
+        margin-bottom: 0;
+    }
+
+    .redesFooter img{
+        height: 30px;
+        width: 30px;
+        margin: 10px;
     }
 
     .whatsappFooter{
@@ -646,16 +746,16 @@ footer{
     /* HEADER*/
 
     header{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas:
-        "logo"
-        "navbar"
+        "navbar logo"
         ;
     }
 
     .thinHeader{
-        height: 110px;
+        height: auto;
     }
 
     .redesHeader{
@@ -663,7 +763,10 @@ footer{
     }
 
     .logo{
-        justify-content: center;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-top: 10px;
+        margin-right: 15px;
     }
 
     .logo img{
@@ -672,7 +775,7 @@ footer{
 
     nav ul li a{
         font-size: 20px;
-        border: 2px solid black;
+        padding: 1px 5px;
     }
 
 
@@ -698,8 +801,8 @@ footer{
     }
 
     .servicio{
-        width: 100px;
-        height: 110px;
+        width: 120px;
+        height: 130px;
     }
 
     #trabajos{
@@ -746,17 +849,55 @@ footer{
         "map";
     }
 
+    /* CONTACTO */
+
+    .form{
+        grid-template-columns: 1fr 5fr 1fr;
+    }
 
 
     /*FOOTER*/
 
     footer{
-        display: flex;
-        justify-content: center;
+        height: 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "horarios"
+        "redes";
     }
 
     .whatsappFooter{
         display: none;
     }
+
+    .horariosFooter{
+        grid-area: horarios;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .redesFooter{
+        display: flex;
+        grid-area: redes;
+        justify-content: center;
+    }
+
+    .redesFooter figure{
+        margin-bottom: 0;
+    }
+
+    .redesFooter img{
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+    }
+
+
+
+
+
+
+
 
 }
