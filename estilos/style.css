@@ -32,6 +32,7 @@ header{
 
 .navbar{
     grid-area: navbar;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,6 +56,11 @@ nav ul li{
     padding: 0 10px;
 }
 
+.thinHeader .navbar{
+    padding: 0;
+    height: 60px;
+}
+
 .thinHeader nav ul li{
     padding: 0 5px;
 }
@@ -63,15 +69,19 @@ nav ul li{
     text-decoration: none;
     color: white;
     font-size: 25px;
-    border: 2px solid black;
-    padding: 10px;
+    border: 1.8px solid white;
+    border-radius: 30px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
     font-family: 'PT Sans Narrow', sans-serif;
     transition: all 0.3s;
 }
 
 .thinHeader #navbarNav ul li a{
     font-size: 20px;
-    border: 2px solid black;
+    border: 1px solid white;
+    border-radius: 30px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
     padding: 0 10px;
 }
 
@@ -393,6 +403,7 @@ figcaption{
     display: flex;
     flex-direction: column;
     border: 3px solid black;
+    border-radius: 15px;
     padding: 20px;
     margin-bottom: 38px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -446,6 +457,7 @@ figcaption{
 
 .carouselStyle{
     border: 2px solid black;
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 10px;
@@ -502,6 +514,7 @@ figcaption{
     grid-area: form;
     background-color: rgba(0, 0, 0, 0.2);
     border: 3px solid black;
+    border-radius: 15px;
     padding: 10px;
     font-family: 'PT Sans Narrow', sans-serif;
     margin-bottom: 10px;
@@ -613,13 +626,13 @@ footer{
         height: 80px;
     }
 
-    .navbar{
+    #navbarNav{
         justify-content: end;
-        margin-right: 10px;
     }
 
-    nav ul li a{
+    #navbarNav ul li a{
         font-size: 20px;
+        padding: 5px 10px;
     }
 
     /*SERVICIOS*/
