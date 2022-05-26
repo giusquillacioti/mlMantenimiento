@@ -1,0 +1,193 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+header{
+    background-color: rgb(0, 0, 102);
+    height: 120px;
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "logo navbar redes";
+
+    .logo{
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        margin: 5px;
+    }
+
+    nav{
+        grid-area: navbar;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #navbarNav{
+            ul{
+                display: flex;
+                
+                li{
+                    list-style-type: none;
+                    padding: 0 10px;
+
+
+                    a{
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 25px;
+                        border: 1.8px solid white;
+                        border-radius: 30px;
+                        box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+                        font-family: 'PT Sans Narrow', sans-serif;
+                        transition: all 0.3s;
+
+                        &:hover{
+                            background-color: rgb(0, 0, 65);
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .redesHeader{
+        grid-area: redes;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        transition: all 0.2s;
+        margin-right: 3px;
+        margin-bottom: 0;
+
+        a{
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            .redes{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.thinHeader{
+    height: 60px;
+    
+    .logo{
+        margin: 0;
+    }
+
+    nav{
+        padding: 0;
+        height: 60px;
+
+        #navbarNav{
+            ul{
+                li{
+                    padding: 0 5px;
+
+                    a{
+                        font-size: 20px;
+                        border: 1px solid white;
+                        border-radius: 30px;
+                        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+                        padding: 0 10px;
+                        
+                        .selected{
+                            background-color: rgb(0, 0, 65);
+                        }
+
+                        &:hover{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color: rgb(0, 0, 102);
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    height: 60px;
+    margin-top: 6px;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "whatsappFooter horariosFooter"
+    ;
+
+    .horariosFooter{
+        grid-area: horariosFooter;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-right: 15px;
+
+    .divHorarios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+        h3{
+            text-decoration: underline;
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        h4{
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+    }
+
+    .whatsappFooter{
+        grid-area: whatsappFooter;
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        transition: all 0.2s;
+        
+        h3{
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+        
+        #wp{
+            margin-right: 10px;
+        }
+
+        a{
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .redesFooter{
+        display: none;
+    }
+}
+
+
+

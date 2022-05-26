@@ -1,0 +1,989 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #000066;
+  height: 120px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "logo navbar redes";
+}
+
+header .logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+}
+
+header nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: navbar;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav #navbarNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav #navbarNav ul li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+header nav #navbarNav ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  border: 1.8px solid white;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'PT Sans Narrow', sans-serif;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header nav #navbarNav ul li a:hover {
+  background-color: #000041;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+header .redesHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: redes;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-right: 3px;
+  margin-bottom: 0;
+}
+
+header .redesHeader a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+header .redesHeader a .redes {
+  margin-right: 20px;
+}
+
+.thinHeader {
+  height: 60px;
+}
+
+.thinHeader .logo {
+  margin: 0;
+}
+
+.thinHeader nav {
+  padding: 0;
+  height: 60px;
+}
+
+.thinHeader nav #navbarNav ul li {
+  padding: 0 5px;
+}
+
+.thinHeader nav #navbarNav ul li a {
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
+}
+
+.thinHeader nav #navbarNav ul li a .selected {
+  background-color: #000041;
+}
+
+.thinHeader nav #navbarNav ul li a:hover {
+  font-size: 25px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #000066;
+  color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 14px;
+  height: 60px;
+  margin-top: 6px;
+  margin-bottom: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "whatsappFooter horariosFooter";
+}
+
+footer .horariosFooter {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: horariosFooter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+}
+
+footer .horariosFooter .divHorarios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .horariosFooter h3 {
+  text-decoration: underline;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+footer .horariosFooter h4 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+footer .whatsappFooter {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: whatsappFooter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+footer .whatsappFooter h3 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+footer .whatsappFooter #wp {
+  margin-right: 10px;
+}
+
+footer .whatsappFooter a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer .redesFooter {
+  display: none;
+}
+
+/*BACKGROUNDS*/
+.index {
+  background-image: url("../img/indexbg.png");
+  background-size: cover;
+}
+
+.servicios {
+  background-image: url("../img/servicesbg.jfif");
+  background-size: contain;
+  background-position: center;
+}
+
+.bg {
+  background-color: gainsboro;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  color: black;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  color: black;
+}
+
+/*INICIO*/
+.mantEd {
+  margin-top: 30px;
+  color: white;
+  font-size: 80px;
+}
+
+.sub1 {
+  color: white;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.sub2 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+}
+
+.pagoTitle {
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.pagoGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: ". pagoBox .";
+}
+
+.pagoBox {
+  margin: 10px 0 15px 0;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.521);
+  height: 76px;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: pagoBox;
+}
+
+.mediosdePago {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 15px;
+}
+
+.mediosdePago figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+.mediosdePago figcaption {
+  margin-left: 5px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: white;
+}
+
+/*SERVICIOS*/
+.texto {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 25px;
+  margin-left: 15px;
+  color: white;
+  text-align: center;
+}
+
+figcaption {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 16px;
+}
+
+.servicio {
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.356);
+  padding: 10px;
+  width: 120px;
+  height: 140px;
+  margin: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.servicio:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.trabajosGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: ". trabajos .";
+}
+
+#trabajos {
+  margin: 15px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.233);
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: trabajos;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 900px;
+}
+
+#trabajos a div figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 120px;
+}
+
+#trabajos a {
+  text-decoration: none;
+  color: black;
+}
+
+#infoServicios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: ". info .";
+}
+
+.infoGrid {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: info;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.infoGrid .infoContainer {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.582);
+  margin: 20px;
+  height: 350px;
+  width: 900px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#infoServicios a {
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: black;
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-decoration: none;
+}
+
+#infoServicios a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.divInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 300px;
+  height: 300px;
+}
+
+.divInfo h2 {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+.fotoServicios {
+  border: 5px solid black;
+}
+
+.divInfo ul li {
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+/*NOSOTROS*/
+.info {
+  margin: 25px 0 35px;
+  padding: 0 100px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: black;
+}
+
+#nosotros {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "reviews map";
+}
+
+.reviews {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: reviews;
+}
+
+.map {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: map;
+}
+
+.nosotrosGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nosotrosColumnas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 38px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 350px;
+}
+
+.nosotrosTitles {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#mapa {
+  text-align: center;
+}
+
+/*PORTFOLIO*/
+.blackSubtitle {
+  font-size: 35px;
+  margin: 10px 0 20px;
+}
+
+.portfolioGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "first second" "third fourth";
+}
+
+.gridCarousels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel {
+  margin: 10px 0 20px;
+  width: 300px;
+  height: 400px;
+}
+
+.carouselStyle {
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 450px;
+}
+
+.first {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: first;
+}
+
+.second {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: second;
+}
+
+.third {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: third;
+}
+
+.fourth {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: fourth;
+}
+
+.carouselDescriptions {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+
+/*CONTACTO*/
+.presupuesto {
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
+  margin-bottom: 14px;
+}
+
+.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: ". form .";
+}
+
+.form article {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: form;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin-bottom: 10px;
+}
+
+/* MEDIA QUERIES*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* HEADER*/
+  header {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo navbar";
+    height: 90px;
+  }
+  .redesHeader {
+    display: none;
+  }
+  .logo img {
+    margin-left: 10px;
+    height: 80px;
+  }
+  #navbarNav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  #navbarNav ul li a {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  /*SERVICIOS*/
+  .servicio {
+    width: 110px;
+    height: 130px;
+    margin: 8px;
+  }
+  #trabajos {
+    width: 750px;
+  }
+  .infoGrid .infoContainer {
+    width: 750px;
+  }
+  .infoContainer img {
+    width: 350px;
+    height: 250px;
+  }
+  .divInfo {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 300px;
+    height: 250px;
+  }
+  .fotoServicios {
+    border: 3px solid black;
+  }
+  /* NOSOTROS */
+  #nosotros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "reviews" "map";
+  }
+  .info {
+    text-align: justify;
+  }
+  /* PORTFOLIO */
+  .portfolioGrid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "first" "second" "third" "fourth";
+  }
+  /* CONTACTO */
+  .form {
+    -ms-grid-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
+  }
+  /*FOOTER*/
+  footer {
+    height: 60px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "redes horarios";
+  }
+  .horariosFooter {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: horarios;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin-right: 25px;
+  }
+  .redesFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: redes;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 20px;
+  }
+  .redesFooter figure {
+    margin-bottom: 0;
+  }
+  .redesFooter img {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+  }
+  .whatsappFooter {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* HEADER*/
+  header {
+    height: auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "navbar logo";
+  }
+  .thinHeader {
+    height: auto;
+  }
+  .redesHeader {
+    display: none;
+  }
+  .logo {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  .logo img {
+    height: 80px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    padding: 1px 5px;
+  }
+  /* INDEX */
+  .index {
+    background-image: url("../img/indexMobilebg.png");
+  }
+  .pagoBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 200px;
+    width: 250px;
+  }
+  /*SERVICIOS*/
+  .texto {
+    font-size: 20px;
+  }
+  .servicio {
+    width: 120px;
+    height: 130px;
+  }
+  #trabajos {
+    width: 400px;
+  }
+  .infoGrid .infoContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 500px;
+    width: 400px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .infoContainer img {
+    width: 280px;
+    height: 180px;
+  }
+  .divInfo {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 300px;
+    height: 300px;
+  }
+  #infoServicios a {
+    margin-bottom: 10px;
+  }
+  .fotoServicios {
+    margin-top: 15px;
+    border: 3px solid black;
+  }
+  /* NOSOTROS */
+  #nosotros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "reviews" "map";
+  }
+  .info {
+    text-align: justify;
+  }
+  /* PORTFOLIO */
+  .portfolioGrid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "first" "second" "third" "fourth";
+  }
+  /* CONTACTO */
+  .form {
+    -ms-grid-columns: 1fr 5fr 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
+  }
+  /*FOOTER*/
+  footer {
+    height: 100px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "horarios" "redes";
+  }
+  .whatsappFooter {
+    display: none;
+  }
+  .horariosFooter {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: horarios;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px;
+  }
+  .redesFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: redes;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .redesFooter figure {
+    margin-bottom: 0;
+  }
+  .redesFooter img {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
