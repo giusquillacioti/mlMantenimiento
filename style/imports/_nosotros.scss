@@ -1,0 +1,47 @@
+.info{
+    margin: 25px 0 35px;
+    padding: 0 100px;
+    font-family: $PTfont;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+}
+
+#nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "reviews map";
+
+    .nosotrosGrid{
+        display: flex;
+        justify-content: center;
+    
+        .nosotrosColumnas{
+            display: flex;
+            flex-direction: column;
+            border: 3px solid black;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 38px;
+            background-color: rgba(0, 0, 0, 0.1);
+            width: 500px;
+            height: 350px;
+
+            h2{
+                text-align: center;
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .reviews{
+        grid-area: reviews;
+    }
+
+    .map{
+        grid-area: map;
+    }
+}

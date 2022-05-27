@@ -1,0 +1,138 @@
+.servicios{
+    background-image: url("../img/servicesbg.jfif");
+    background-size: contain;
+    background-position: center;
+}
+
+.texto{
+    font-family: $PTfont;
+    font-size: 25px;
+    margin-left: 15px;
+    color: white;
+    text-align: center;
+}
+
+.trabajosGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". trabajos .";
+
+    #trabajos{
+        margin: 15px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.233);
+        grid-area: trabajos;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 900px;
+    
+        a{
+            text-decoration: none;
+            color: black;
+
+            .servicio{
+                border: 2px solid white;
+                border-radius: 20px;
+                background-color: rgba(255, 255, 255, 0.356);
+                padding:10px;
+                width: 120px;
+                height: 140px;
+                margin: 20px;
+                transition: all 0.2s;
+            
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.8);
+                    transform: scale(1.1);
+                    
+                }
+                
+                figure{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: space-evenly;
+                    height: 120px;
+                }
+
+                    figcaption{
+                font-family: $BNfont;
+                font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+#infoServicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". info .";
+
+    .infoGrid{
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 40px;
+
+        .infoContainer{
+            color: white;
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.582);
+            margin: 20px;
+            height: 350px;
+            width: 900px;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .divInfo{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 300px;
+                height: 300px;
+            
+                h2{
+                    font-size: 30px;
+                    text-align: center;
+                    color: white;
+                }
+            
+                ul{
+                    li{
+                    font-family: $PTfont;
+                    margin-left: 20px;
+                    font-size: 18px;
+                    }
+                }
+            
+                a{
+                    color: white;
+                    border: 1px solid white;
+                    border-radius: 15px;
+                    padding: 5px;
+                    background-color: black;
+                    text-align: center;
+                    font-family:  $PTfont;
+                    text-decoration: none;
+            
+                    &:hover{
+                        font-weight: bold;
+                        background-color: rgb(0, 0, 65);
+                    }
+                }
+            
+                .fotoServicios{
+                    border: 5px solid black;
+                }
+            }
+        }
+    }
+}

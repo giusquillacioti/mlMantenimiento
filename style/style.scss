@@ -1,430 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
-@import "general";
-
-
-/*BACKGROUNDS*/
-
-.index{
-    background-image: url("../img/indexbg.png");
-    background-size: cover;
-}
-
-.servicios{
-    background-image: url("../img/servicesbg.jfif");
-    background-size: contain;
-    background-position: center;
-}
-
-.bg{
-    background-color:gainsboro;
-}
-
-h1{
-    text-align: center;
-    margin-top: 30px;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
-    color: black;
-}
-
-h2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
-    color: black;
-}
-
-
-
-/*INICIO*/
-
-.mantEd{
-    margin-top: 30px;
-    color: white;
-    font-size: 80px;
-}
-
-.sub1{
-    color: white;
-    font-size: 40px;
-    margin-top: 20px;
-}
-
-.sub2{
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    font-style: italic;
-}
-
-
-.pagoTitle{
-    text-align: center;
-    color: white;
-    margin-top: 30px;
-    font-size: 30px;
-    font-family: 'Bebas Neue', cursive;
-}
-
-.pagoGrid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    ". pagoBox .";
-}
-
-.pagoBox{
-    margin: 10px 0 15px 0;
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.521);
-    height: 76px;
-    width: 600px;
-    display: flex;
-    justify-content: space-evenly;
-    grid-area: pagoBox;
-}
-    
-.mediosdePago{   
-    display: flex;
-    align-items: center;
-    margin: 0 15px;
-}
-
-.mediosdePago figure{
-    display: flex;
-    align-items: center;
-    margin-bottom: 0;
-}
-
-.mediosdePago figcaption{
-    margin-left: 5px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*SERVICIOS*/
-
-.texto{
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 25px;
-    margin-left: 15px;
-    color: white;
-    text-align: center;
-}
-
-figcaption{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 16px;
-}
-
-.servicio{
-    border: 2px solid white;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.356);
-    padding:10px;
-    width: 120px;
-    height: 140px;
-    margin: 20px;
-    transition: all 0.2s;
-}
-
-.servicio:hover{
-    background-color: rgba(255, 255, 255, 0.8);
-    transform: scale(1.1);
-    
-}
-
-.trabajosGrid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    ". trabajos .";
-}
-
-#trabajos{
-    margin: 15px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.233);
-    grid-area: trabajos;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 900px;
-}
-
-#trabajos a div figure{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
-    height: 120px;
-}
-
-#trabajos a{
-    text-decoration: none;
-    color: black;
-}
-
-#infoServicios{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    ". info .";
-}
-
-.infoGrid{
-    grid-area: info;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-.infoGrid .infoContainer{
-    color: white;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.582);
-    margin: 20px;
-    height: 350px;
-    width: 900px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-    
-#infoServicios a{
-    color: white;
-    border: 1px solid white;
-    border-radius: 15px;
-    padding: 5px;
-    background-color: black;
-    text-align: center;
-    font-family:  'PT Sans Narrow', sans-serif;
-    text-decoration: none;
-}
-
-#infoServicios a:hover{
-    font-weight: bold;
-    text-decoration:underline;
-}
-
-.divInfo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 300px;
-    height: 300px;
-}
-
-.divInfo h2{
-    font-size: 30px;
-    text-align: center;
-    color: white;
-}
-
-.fotoServicios{
-    border: 5px solid black;
-}
-
-.divInfo ul li{
-    font-family:  'PT Sans Narrow', sans-serif;
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-
-
-
-
-
-/*NOSOTROS*/
-
-.info{
-    margin: 25px 0 35px;
-    padding: 0 100px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 24px;
-    text-align: center;
-    color: black;
-}
-
-#nosotros{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "reviews map";
-}
-
-.reviews{
-    grid-area: reviews;
-}
-.map{
-    grid-area: map;
-}
-
-.nosotrosGrid{
-    display: flex;
-    justify-content: center;
-}
-
-.nosotrosColumnas{
-    display: flex;
-    flex-direction: column;
-    border: 3px solid black;
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 38px;
-    background-color: rgba(0, 0, 0, 0.1);
-    width: 500px;
-    height: 350px;
-}
-
-.nosotrosTitles{
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-
-#mapa{
-    text-align: center;
-}
-
-
-
-
-
-
-
-/*PORTFOLIO*/
-
-.blackSubtitle{
-    font-size: 35px;
-    margin: 10px 0 20px;
-}
-
-.portfolioGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "first second"
-    "third fourth";
-}
-
-.gridCarousels{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel{
-    margin: 10px 0 20px;
-    width: 300px;
-    height: 400px;
-}
-
-.carouselStyle{
-    border: 2px solid black;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 450px;
-}
-
-.first{
-    grid-area: first;
-}
-
-.second{
-    grid-area: second;
-}
-
-.third{
-    grid-area: third;
-}
-
-.fourth{
-    grid-area: fourth;
-}
-
-.carouselDescriptions{
-    font-size: 20px;
-    text-align: center;
-    color: black;
-}
-
-
-
-
-
-
-/*CONTACTO*/
-
-.presupuesto{
-    font-size: 30px;
-    font-family: 'Bebas Neue', cursive;
-    margin-bottom: 14px;
-}
-
-.form{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    ". form .";
-}
-
-.form article{
-    grid-area: form;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 3px solid black;
-    border-radius: 15px;
-    padding: 10px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    margin-bottom: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MEDIA QUERIES*/
+@import "./imports/variables";
+@import "./imports/general";
+@import "./imports/index";
+@import "./imports/servicios";
+@import "./imports/nosotros";
+@import "./imports/portfolio";
+@import "./imports/contacto";
 
 @media only screen and (min-width:768px) and (max-width:1023px){
-    
-    /* HEADER*/
 
     header{
         grid-template-columns: 1fr 1fr;
@@ -434,7 +18,7 @@ figcaption{
         height: 90px;
     }
 
-    .redesHeader{
+    .redes{
         display: none;
     }
     
@@ -452,19 +36,21 @@ figcaption{
         padding: 5px 10px;
     }
 
-    /*SERVICIOS*/
+    .thinHeader .mlLogo{
+        height: 60px;
+    }
 
-    .servicio{
+    .trabajosGrid #trabajos a .servicio{
         width: 110px;
         height: 130px;
         margin: 8px;
     }
 
-    #trabajos{
+    .trabajosGrid #trabajos{
         width: 750px;
     }
 
-    .infoGrid .infoContainer{
+    #infoServicios .infoGrid .infoContainer{
         width: 750px;
     }
 
@@ -483,8 +69,6 @@ figcaption{
         border: 3px solid black;
     }
 
-    /* NOSOTROS */
-
     #nosotros{
         display: grid;
         grid-template-columns: 1fr;
@@ -498,8 +82,6 @@ figcaption{
         text-align: justify;
     }
 
-    /* PORTFOLIO */
-
     .portfolioGrid{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
@@ -510,29 +92,24 @@ figcaption{
         "fourth";
     }
 
-    /* CONTACTO */
-
     .form{
         grid-template-columns: 1fr 3fr 1fr;
     }
 
-    /*FOOTER*/
-
     footer{
-        height: 60px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
         "redes horarios";
     }
 
-    .horariosFooter{
+    footer .horariosFooter{
         grid-area: horarios;
         justify-content: end;
         margin-right: 25px;
     }
 
-    .redesFooter{
+    footer .redesFooter{
         display: flex;
         grid-area: redes;
         justify-content: start;
@@ -547,18 +124,16 @@ figcaption{
     .redesFooter img{
         height: 30px;
         width: 30px;
-        margin: 10px;
+        margin: 5px;
     }
 
-    .whatsappFooter{
+    footer .whatsappFooter{
         display: none;
     }
 
 }
 
 @media only screen and (max-width:767px){
-    
-    /* HEADER*/
 
     header{
         height: auto;
@@ -573,7 +148,7 @@ figcaption{
         height: auto;
     }
 
-    .redesHeader{
+    .redes{
         display: none;
     }
 
@@ -582,46 +157,50 @@ figcaption{
         align-items: flex-start;
         margin-top: 10px;
         margin-right: 15px;
+        height: 80px;
     }
 
     .logo img{
         height: 80px;
+        width: 150px;
     }
 
     nav ul li a{
         font-size: 20px;
         padding: 1px 5px;
+        background-color: rgb(0,0,102);
     }
 
-    /* INDEX */
-    
     .index{
         background-image: url("../img/indexMobilebg.png");
     }
 
-    .pagoBox{
+    main section .pagoGrid .pagoBox{
         flex-direction: column;
         align-items: center;
         height: 200px;
         width: 250px;
     }
 
-    /*SERVICIOS*/
+    main section .pagoGrid .pagoBox div figure figcaption{
+        width: 125px;
+        margin-left: 15px;
+    }
 
     .texto{
     font-size: 20px;
     }
 
-    .servicio{
+    .trabajosGrid #trabajos a .servicio{
         width: 120px;
         height: 130px;
     }
 
-    #trabajos{
+    .trabajosGrid #trabajos{
         width: 400px;
     }
 
-    .infoGrid .infoContainer{
+    #infoServicios .infoGrid .infoContainer{
         flex-direction: column-reverse;
         height: 500px;
         width: 400px;
@@ -640,16 +219,16 @@ figcaption{
         height: 300px;
     }
 
-    #infoServicios a{
+    #infoServicios .infoGrid .infoContainer .divInfo a{
         margin-bottom: 10px;
+        padding: 5px 20px;
+        border-radius: 25px;
     }
     
     .fotoServicios{
         margin-top: 15px;
         border: 3px solid black;
     }
-
-    /* NOSOTROS */
 
     #nosotros{
         display: grid;
@@ -664,8 +243,6 @@ figcaption{
         text-align: justify;
     }
 
-    /* PORTFOLIO */
-
     .portfolioGrid{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
@@ -676,13 +253,9 @@ figcaption{
         "fourth";
     }
 
-    /* CONTACTO */
-
     .form{
         grid-template-columns: 1fr 5fr 1fr;
     }
-
-    /*FOOTER*/
 
     footer{
         height: 100px;
@@ -693,17 +266,17 @@ figcaption{
         "redes";
     }
 
-    .whatsappFooter{
+    footer .whatsappFooter{
         display: none;
     }
 
-    .horariosFooter{
+    footer .horariosFooter{
         grid-area: horarios;
         justify-content: center;
         margin-top: 10px;
     }
 
-    .redesFooter{
+    footer .redesFooter{
         display: flex;
         grid-area: redes;
         justify-content: center;

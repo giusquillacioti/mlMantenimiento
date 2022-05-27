@@ -1,0 +1,32 @@
+.form{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    ". form .";
+
+    article{
+        grid-area: form;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 3px solid black;
+        border-radius: 15px;
+        padding: 10px;
+        font-family: $PTfont;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
