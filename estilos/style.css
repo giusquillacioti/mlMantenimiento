@@ -466,7 +466,7 @@ main section .pagoGrid .pagoBox div figure figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.582);
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 20px;
   height: 350px;
   width: 900px;
@@ -679,7 +679,7 @@ main section .pagoGrid .pagoBox div figure figcaption {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: form;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   border: 3px solid black;
   border-radius: 15px;
   padding: 10px;

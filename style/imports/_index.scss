@@ -38,7 +38,7 @@ main{
             .pagoBox{
                 margin: 10px 0 15px 0;
                 border: 1px solid white;
-                background-color: rgba(0, 0, 0, 0.6);
+                background-color: $darkerBoxBGcolor;
                 height: 76px;
                 width: 600px;
                 display: flex;
