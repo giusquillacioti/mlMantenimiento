@@ -59,7 +59,8 @@
         height: 250px;
     }
     
-    .divInfo{
+    
+    #infoServicios .infoGrid .infoContainer .divInfo{
         justify-content: space-evenly;
         width: 300px;
         height: 250px;
@@ -212,11 +213,15 @@
         height: 180px;
     }
     
-    .divInfo{
+    #infoServicios .infoGrid .infoContainer .divInfo{
         justify-content: space-evenly;
         align-items: center;
         width: 300px;
         height: 300px;
+    }
+
+    #infoServicios .infoGrid .infoContainer .divInfo h2{
+        font-size: 25px;
     }
 
     #infoServicios .infoGrid .infoContainer .divInfo a{

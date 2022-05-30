@@ -489,7 +489,7 @@ main section .pagoGrid .pagoBox div figure figcaption {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 300px;
+  width: 400px;
   height: 300px;
 }
 
@@ -523,6 +523,13 @@ main section .pagoGrid .pagoBox div figure figcaption {
 
 #infoServicios .infoGrid .infoContainer .divInfo .fotoServicios {
   border: 5px solid black;
+}
+
+.invert {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .info {
@@ -730,7 +737,7 @@ main section .pagoGrid .pagoBox div figure figcaption {
     width: 350px;
     height: 250px;
   }
-  .divInfo {
+  #infoServicios .infoGrid .infoContainer .divInfo {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -885,7 +892,7 @@ main section .pagoGrid .pagoBox div figure figcaption {
     width: 280px;
     height: 180px;
   }
-  .divInfo {
+  #infoServicios .infoGrid .infoContainer .divInfo {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -894,6 +901,9 @@ main section .pagoGrid .pagoBox div figure figcaption {
             align-items: center;
     width: 300px;
     height: 300px;
+  }
+  #infoServicios .infoGrid .infoContainer .divInfo h2 {
+    font-size: 25px;
   }
   #infoServicios .infoGrid .infoContainer .divInfo a {
     margin-bottom: 10px;
