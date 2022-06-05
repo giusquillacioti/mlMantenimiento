@@ -1,10 +1,10 @@
 .info{
-    margin: 25px 0 35px;
-    padding: 0 100px;
+    margin: 25px 50px 35px;
+    padding: 0 20px;
     font-family: $PTfont;
     font-size: 24px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 #nosotros{
@@ -21,11 +21,11 @@
         .nosotrosColumnas{
             display: flex;
             flex-direction: column;
-            border: 3px solid black;
+            border: 3px solid white;
             border-radius: 15px;
             padding: 20px;
             margin-bottom: 38px;
-            background-color: $boxBGcolor;
+            background-color: $lightBoxColor;
             width: 500px;
             height: 350px;
 

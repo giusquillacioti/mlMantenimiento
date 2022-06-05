@@ -143,10 +143,6 @@ header .redesHeader a .redes {
   font-size: 25px;
 }
 
-.bg {
-  background-color: gainsboro;
-}
-
 .sub1 {
   color: white;
   font-size: 40px;
@@ -164,7 +160,7 @@ h1 {
   margin-top: 30px;
   font-family: "Bebas Neue", cursive;
   font-size: 50px;
-  color: black;
+  color: white;
 }
 
 h2 {
@@ -172,7 +168,7 @@ h2 {
   margin-bottom: 10px;
   font-family: "Bebas Neue", cursive;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 footer {
@@ -268,11 +264,6 @@ footer .redesFooter {
   display: none;
 }
 
-.index {
-  background-image: url("../img/indexbg.png");
-  background-size: cover;
-}
-
 main h1 {
   margin-top: 30px;
   color: white;
@@ -283,6 +274,9 @@ main h2 {
   text-align: center;
   color: white;
   font-size: 50px;
+}
+
+main .italic {
   font-style: italic;
 }
 
@@ -347,12 +341,6 @@ main section .pagoGrid .pagoBox div figure figcaption {
   color: white;
 }
 
-.servicios {
-  background-image: url("../img/servicesbg.jfif");
-  background-size: contain;
-  background-position: center;
-}
-
 .texto {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 25px;
@@ -375,7 +363,7 @@ main section .pagoGrid .pagoBox div figure figcaption {
   margin: 15px;
   border: 2px solid white;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.233);
+  background-color: rgba(255, 255, 255, 0.2);
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: trabajos;
@@ -398,7 +386,7 @@ main section .pagoGrid .pagoBox div figure figcaption {
 .trabajosGrid #trabajos a .servicio {
   border: 2px solid white;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.356);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 10px;
   width: 120px;
   height: 140px;
@@ -523,7 +511,7 @@ main section .pagoGrid .pagoBox div figure figcaption {
   background-color: #000041;
 }
 
-#infoServicios .infoGrid .infoContainer .divInfo .fotoServicios {
+#infoServicios .infoGrid .infoContainer figure .fotoServicios {
   border: 5px solid black;
 }
 
@@ -535,12 +523,12 @@ main section .pagoGrid .pagoBox div figure figcaption {
 }
 
 .info {
-  margin: 25px 0 35px;
-  padding: 0 100px;
+  margin: 25px 50px 35px;
+  padding: 0 20px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 24px;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 #nosotros {
@@ -570,11 +558,11 @@ main section .pagoGrid .pagoBox div figure figcaption {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 15px;
   padding: 20px;
   margin-bottom: 38px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
   width: 500px;
   height: 350px;
 }
@@ -678,9 +666,9 @@ main section .pagoGrid .pagoBox div figure figcaption {
 }
 
 .portfolioGrid .gridCarousels .carouselStyle {
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
   margin: 20px;
   padding: 10px;
   display: -webkit-box;
@@ -705,7 +693,7 @@ main section .pagoGrid .pagoBox div figure figcaption {
 .portfolioGrid .gridCarousels .carouselStyle h3 {
   font-size: 20px;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .portfolioGrid .gridCarousels .first {
@@ -746,12 +734,35 @@ main section .pagoGrid .pagoBox div figure figcaption {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: form;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 3px solid black;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 3px solid white;
   border-radius: 15px;
   padding: 10px;
   font-family: "PT Sans Narrow", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.form article label {
+  color: white;
+  font-weight: bold;
+}
+
+.index {
+  background-image: url("../img/indexbg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.servicios {
+  background-image: url("../img/servicesbg.jpg");
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg {
+  background-image: url("../img/cementbg.jpg");
+  background-size: cover;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -910,7 +921,7 @@ main section .pagoGrid .pagoBox div figure figcaption {
     background-color: #000066;
   }
   .index {
-    background-image: url("../img/indexMobilebg.png");
+    background-image: url("../img/indexMobilebg.jpg");
   }
   main section .pagoGrid .pagoBox {
     -webkit-box-orient: vertical;

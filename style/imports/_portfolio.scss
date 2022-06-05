@@ -12,9 +12,9 @@
         align-items: center;
 
         .carouselStyle{
-            border: 2px solid black;
+            border: 2px solid white;
             border-radius: 15px;
-            background-color: $boxBGcolor;
+            background-color: $lightBoxColor;
             margin: 20px;
             padding: 10px;
             display: flex;
@@ -32,7 +32,7 @@
             h3{
                 font-size: 20px;
                 text-align: center;
-                color: black;
+                color: white;
             }
         }
     

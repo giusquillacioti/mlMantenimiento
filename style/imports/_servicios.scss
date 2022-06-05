@@ -1,9 +1,3 @@
-.servicios{
-    background-image: url("../img/servicesbg.jfif");
-    background-size: contain;
-    background-position: center;
-}
-
 .texto{
     font-family: $PTfont;
     font-size: 25px;
@@ -23,7 +17,7 @@
         margin: 15px;
         border: 2px solid rgb(255, 255, 255);
         border-radius: 20px;
-        background-color: rgba(255, 255, 255, 0.233);
+        background-color: $lightBoxColor;
         grid-area: trabajos;
         display: flex;
         flex-wrap: wrap;
@@ -37,7 +31,7 @@
             .servicio{
                 border: 2px solid white;
                 border-radius: 20px;
-                background-color: rgba(255, 255, 255, 0.356);
+                background-color: rgba(255, 255, 255, 0.4);
                 padding:10px;
                 width: 120px;
                 height: 140px;
@@ -85,7 +79,7 @@
         .infoContainer{
             color: white;
             display: flex;
-            background-color: $darkerBoxBGcolor;
+            background-color: $darkBoxColor;
             margin: 20px;
             height: 350px;
             width: 900px;
@@ -128,7 +122,9 @@
                         background-color: $darkerThemeColor;
                     }
                 }
+            }
             
+            figure{
                 .fotoServicios{
                     border: 5px solid black;
                 }
