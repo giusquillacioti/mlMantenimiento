@@ -184,14 +184,32 @@
         width: 150px;
     }
 
-    nav ul li a{
+    header nav #navbarNav ul li a{
         font-size: 20px;
-        padding: 1px 5px;
+        padding: 0 10px;
         background-color: $themeColor;
     }
 
     .index{
         background-image: url("../img/indexMobilebg.jpg");
+    }
+
+    main h1{
+        margin-top: 40px;
+        font-size: 50px;
+    }
+
+    main .sub1{
+        font-size: 30px;
+    }
+
+    main .italic{
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    main section h3{
+        font-size: 25px;
     }
 
     main section .pagoGrid .pagoBox{
@@ -210,19 +228,24 @@
     font-size: 20px;
     }
 
-    .trabajosGrid #trabajos a .servicio{
-        width: 120px;
-        height: 130px;
+    .trabajosGrid #trabajos{
+        width: 300px;
     }
 
-    .trabajosGrid #trabajos{
-        width: 400px;
+    .trabajosGrid #trabajos a .servicio{
+        width: 100px;
+        height: 130px;
+        margin: 10px;
+    }
+
+    .trabajosGrid #trabajos a .servicio figcaption{
+        font-size: 13px;
     }
 
     #infoServicios .infoGrid .infoContainer{
         flex-direction: column-reverse;
         height: 500px;
-        width: 400px;
+        width: 350px;
         justify-content: space-evenly; 
     }
 
@@ -253,6 +276,15 @@
         border: 3px solid black;
     }
 
+    .bg{
+        background-size: contain;
+        background-attachment: fixed;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
     #nosotros{
         display: grid;
         grid-template-columns: 1fr;
@@ -264,6 +296,46 @@
 
     .info{
         text-align: justify;
+        font-size: 15px;
+    }
+
+    #nosotros .nosotrosGrid .nosotrosColumnas{
+        width: 350px;
+        height: auto;
+    }
+
+    #nosotros .nosotrosGrid .nosotrosColumnas h2{
+        margin-top: 0;
+        font-size: 25px;
+    }
+
+    #nosotros .nosotrosGrid .nosotrosColumnas .reviewsDesktop{
+        display: none;
+    }
+
+    #nosotros .nosotrosGrid .nosotrosColumnas .googleReviews figure .reviewsMobile{
+        display: block;
+        height: 150px;
+        width: 240px;
+    }
+
+    #nosotros .nosotrosGrid .nosotrosColumnas .googleReviews .buttons{
+        flex-direction: column;
+        padding: 0 0 15px;
+    }
+
+    #nosotros .nosotrosGrid .nosotrosColumnas .googleReviews .buttons a{
+        padding: 10px;
+    }
+
+    #nosotros .nosotrosGrid .nosotrosColumnas iframe{
+        width: 300px;
+        height: 310px;
+    }
+
+    .sub2{
+        font-size: 25px;
+        margin-bottom: 0;
     }
 
     .portfolioGrid{
@@ -274,6 +346,14 @@
         "second"
         "third"
         "fourth";
+    }
+
+    .portfolioGrid .gridCarousels .carouselStyle{
+        width: 350px;
+    }
+
+    .portfolioGrid .gridCarousels .carouselStyle h3{
+        font-size: 15px;
     }
 
     .form{

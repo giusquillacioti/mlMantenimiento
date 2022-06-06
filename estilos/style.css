@@ -596,6 +596,10 @@ main section .pagoGrid .pagoBox div figure figcaption {
   margin-bottom: 0;
 }
 
+#nosotros .nosotrosGrid .nosotrosColumnas .googleReviews figure .reviewsMobile {
+  display: none;
+}
+
 #nosotros .nosotrosGrid .nosotrosColumnas .googleReviews .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -915,13 +919,27 @@ main section .pagoGrid .pagoBox div figure figcaption {
     height: 80px;
     width: 150px;
   }
-  nav ul li a {
+  header nav #navbarNav ul li a {
     font-size: 20px;
-    padding: 1px 5px;
+    padding: 0 10px;
     background-color: #000066;
   }
   .index {
     background-image: url("../img/indexMobilebg.jpg");
+  }
+  main h1 {
+    margin-top: 40px;
+    font-size: 50px;
+  }
+  main .sub1 {
+    font-size: 30px;
+  }
+  main .italic {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+  main section h3 {
+    font-size: 25px;
   }
   main section .pagoGrid .pagoBox {
     -webkit-box-orient: vertical;
@@ -941,12 +959,16 @@ main section .pagoGrid .pagoBox div figure figcaption {
   .texto {
     font-size: 20px;
   }
-  .trabajosGrid #trabajos a .servicio {
-    width: 120px;
-    height: 130px;
-  }
   .trabajosGrid #trabajos {
-    width: 400px;
+    width: 300px;
+  }
+  .trabajosGrid #trabajos a .servicio {
+    width: 100px;
+    height: 130px;
+    margin: 10px;
+  }
+  .trabajosGrid #trabajos a .servicio figcaption {
+    font-size: 13px;
   }
   #infoServicios .infoGrid .infoContainer {
     -webkit-box-orient: vertical;
@@ -954,7 +976,7 @@ main section .pagoGrid .pagoBox div figure figcaption {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     height: 500px;
-    width: 400px;
+    width: 350px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -985,6 +1007,13 @@ main section .pagoGrid .pagoBox div figure figcaption {
     margin-top: 15px;
     border: 3px solid black;
   }
+  .bg {
+    background-size: contain;
+    background-attachment: fixed;
+  }
+  h1 {
+    font-size: 35px;
+  }
   #nosotros {
     display: -ms-grid;
     display: grid;
@@ -996,6 +1025,41 @@ main section .pagoGrid .pagoBox div figure figcaption {
   }
   .info {
     text-align: justify;
+    font-size: 15px;
+  }
+  #nosotros .nosotrosGrid .nosotrosColumnas {
+    width: 350px;
+    height: auto;
+  }
+  #nosotros .nosotrosGrid .nosotrosColumnas h2 {
+    margin-top: 0;
+    font-size: 25px;
+  }
+  #nosotros .nosotrosGrid .nosotrosColumnas .reviewsDesktop {
+    display: none;
+  }
+  #nosotros .nosotrosGrid .nosotrosColumnas .googleReviews figure .reviewsMobile {
+    display: block;
+    height: 150px;
+    width: 240px;
+  }
+  #nosotros .nosotrosGrid .nosotrosColumnas .googleReviews .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0 15px;
+  }
+  #nosotros .nosotrosGrid .nosotrosColumnas .googleReviews .buttons a {
+    padding: 10px;
+  }
+  #nosotros .nosotrosGrid .nosotrosColumnas iframe {
+    width: 300px;
+    height: 310px;
+  }
+  .sub2 {
+    font-size: 25px;
+    margin-bottom: 0;
   }
   .portfolioGrid {
     -ms-grid-columns: 1fr;
@@ -1003,6 +1067,12 @@ main section .pagoGrid .pagoBox div figure figcaption {
     -ms-grid-rows: (1fr)[4];
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas: "first" "second" "third" "fourth";
+  }
+  .portfolioGrid .gridCarousels .carouselStyle {
+    width: 350px;
+  }
+  .portfolioGrid .gridCarousels .carouselStyle h3 {
+    font-size: 15px;
   }
   .form {
     -ms-grid-columns: 1fr 5fr 1fr;
