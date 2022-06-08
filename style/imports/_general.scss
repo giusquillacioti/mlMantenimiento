@@ -144,6 +144,12 @@ h2{
     color: $title;
 }
 
+.box{
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: $lightBoxColor;
+}
+
 footer{
     background-color: $themeColor;
     color: white;

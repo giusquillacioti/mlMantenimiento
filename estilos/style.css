@@ -171,6 +171,12 @@ h2 {
   color: white;
 }
 
+.box, .trabajosGrid #trabajos, .trabajosGrid #trabajos a .servicio, #nosotros .nosotrosGrid .nosotrosColumnas, .portfolioGrid .gridCarousels .carouselStyle, .form article {
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 footer {
   background-color: #000066;
   color: white;
@@ -361,9 +367,6 @@ main section .pagoGrid .pagoBox div figure figcaption {
 
 .trabajosGrid #trabajos {
   margin: 15px;
-  border: 2px solid white;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.3);
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: trabajos;
@@ -384,8 +387,6 @@ main section .pagoGrid .pagoBox div figure figcaption {
 }
 
 .trabajosGrid #trabajos a .servicio {
-  border: 2px solid white;
-  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   width: 120px;
@@ -558,11 +559,8 @@ main section .pagoGrid .pagoBox div figure figcaption {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 3px solid white;
-  border-radius: 15px;
   padding: 20px;
   margin-bottom: 38px;
-  background-color: rgba(255, 255, 255, 0.3);
   width: 500px;
   height: 350px;
 }
@@ -670,9 +668,6 @@ main section .pagoGrid .pagoBox div figure figcaption {
 }
 
 .portfolioGrid .gridCarousels .carouselStyle {
-  border: 2px solid white;
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.3);
   margin: 20px;
   padding: 10px;
   display: -webkit-box;
@@ -738,9 +733,6 @@ main section .pagoGrid .pagoBox div figure figcaption {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: form;
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 3px solid white;
-  border-radius: 15px;
   padding: 10px;
   font-family: "PT Sans Narrow", sans-serif;
   margin-bottom: 30px;
@@ -749,6 +741,55 @@ main section .pagoGrid .pagoBox div figure figcaption {
 .form article label {
   color: white;
   font-weight: bold;
+}
+
+.redesContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.redesContacto li {
+  list-style-type: none;
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 10px 30px;
+  padding: 20px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.redesContacto li a {
+  text-decoration: none;
+  color: white;
+}
+
+.redesContacto li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  font-weight: bold;
+}
+
+.red--facebook {
+  background-color: #29487d;
+}
+
+.red--instagram {
+  background-color: #c0007a;
+}
+
+.red--whatsapp {
+  background-color: #25d366;
 }
 
 .index {
