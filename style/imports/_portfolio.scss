@@ -12,9 +12,7 @@
         align-items: center;
 
         .carouselStyle{
-            border: 2px solid white;
-            border-radius: 15px;
-            background-color: $lightBoxColor;
+            @extend.box;
             margin: 20px;
             padding: 10px;
             display: flex;

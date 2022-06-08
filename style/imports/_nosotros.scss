@@ -21,11 +21,9 @@
         .nosotrosColumnas{
             display: flex;
             flex-direction: column;
-            border: 3px solid white;
-            border-radius: 15px;
+            @extend.box;
             padding: 20px;
             margin-bottom: 38px;
-            background-color: $lightBoxColor;
             width: 500px;
             height: 350px;
 
