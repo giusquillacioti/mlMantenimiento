@@ -932,7 +932,6 @@ p {
   }
   .index {
     background-image: url("../img/indexMobilebg.jpg");
-    display: block;
   }
   .index--header {
     height: auto;
