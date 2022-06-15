@@ -5,11 +5,11 @@
     background-attachment: fixed;
 
     p{
-        font-family: $PTfont;
+        font-family: $generalFont;
         font-size: 25px;
         margin: 0;
         padding: 0;
-        color: white;
+        color: $text;
         text-align: center;
     }
     
@@ -56,7 +56,7 @@
                 }
                 
                 figcaption{
-                font-family: $BNfont;
+                font-family: $titleFont;
                 font-size: 16px;
                 }
             }
@@ -79,7 +79,7 @@
             margin-bottom: 40px;
             
             &--box{
-                color: white;
+                color: $text;
                 display: flex;
                 background-color: $darkBoxColor;
                 margin: 20px;
@@ -98,12 +98,12 @@
                     h2{
                         font-size: 30px;
                         text-align: center;
-                        color: white;
+                        color: $text;
                     }
                     
                     ul{
                         li{
-                            font-family: $PTfont;
+                            font-family: $generalFont;
                             margin-left: 20px;
                             font-size: 18px;
                             text-align: start;
@@ -111,13 +111,13 @@
                     }
                     
                     a{
-                        color: white;
+                        color: $text;
                         border: 1px solid white;
                         border-radius: 15px;
                         padding: 5px;
                         background-color: black;
                         text-align: center;
-                        font-family:  $PTfont;
+                        font-family:  $generalFont;
                         text-decoration: none;
                         
                         &:hover{

@@ -42,13 +42,13 @@
             
         h1{
             margin-top: 15px;
-            color: white;
+            color: $text;
             font-size: 80px;
         }
 
         h2{
             text-align: center;
-            color: white;
+            color: $text;
             font-size: 50px;
         }
         
@@ -60,10 +60,10 @@
             
             h3{
                 text-align: center;
-                color: white;
+                color: $text;
                 margin-top: 30px;
                 font-size: 30px;
-                font-family: $BNfont;
+                font-family: $titleFont;
             }
             
             .pago{
@@ -95,8 +95,8 @@
                             
                             figcaption{
                                 margin-left: 5px;
-                                font-family: $PTfont;
-                                color: white;
+                                font-family: $generalFont;
+                                color: $text;
                             }
                         }
                     }

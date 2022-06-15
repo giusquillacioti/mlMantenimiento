@@ -44,8 +44,8 @@ header{
                         box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
                         padding: 0 10px;
                         text-decoration: none;
-                        color: white;
-                        font-family: $PTfont;
+                        color: $text;
+                        font-family: $generalFont;
                         transition: all 0.3s;
 
                         &:hover{
@@ -92,17 +92,17 @@ header{
 h1{
     text-align: center;
     margin-top: 30px;
-    font-family: $BNfont;
+    font-family: $titleFont;
     font-size: 50px;
-    color: $title;
+    color: $text;
 }
 
 h2{
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: $BNfont;
+    font-family: $titleFont;
     text-align: center;
-    color: $title;
+    color: $text;
 }
 
 .box{
@@ -113,9 +113,9 @@ h2{
 
 footer{
     background-color: $themeColor;
-    color: white;
+    color: $text;
     z-index: 9999;
-    font-family: $PTfont;
+    font-family: $generalFont;
     font-size: 14px;
     height: $height1;
     margin-top: 6px;

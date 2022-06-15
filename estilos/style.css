@@ -744,22 +744,32 @@ p {
   display: grid;
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: ". form .";
+  -ms-grid-rows: 1fr 8fr;
+      grid-template-rows: 1fr 8fr;
+      grid-template-areas: ". title ." ". form .";
+}
+
+.form h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
 }
 
 .form article {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: form;
   padding: 10px;
   font-family: "PT Sans Narrow", sans-serif;
   margin-bottom: 30px;
+  color: white;
+}
+
+.form article h3 {
+  margin-top: 5px;
 }
 
 .form article label {
-  color: white;
   font-weight: bold;
 }
 
