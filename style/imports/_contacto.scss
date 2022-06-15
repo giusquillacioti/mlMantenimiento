@@ -1,4 +1,5 @@
 .form{
+    margin-top: 15px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
@@ -18,52 +19,3 @@
         }
     }
 }
-
-@mixin mp ($margin, $padding) {
-	margin: $margin;
-	padding: $padding;
-}
-
-.redesContacto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:0;
-
-    li{
-        list-style-type: none;
-        text-align: center;
-        font-family: $PTfont;
-        font-size: 20px;
-        border: 2px solid white;
-        border-radius: 20px;
-        @include mp (10px 30px, 20px);
-        transition: all .2s;
-
-        a{
-            text-decoration: none;
-            color: white;
-        }
-
-        &:hover{
-            transform: scale(1.1);
-            font-weight: bold;
-        }
-    }
-}
-
-
-$redes:(
-	facebook: rgb(41,72,125),
-	instagram: rgb(192,0,122),
-	whatsapp: rgb(37,211,102),
-);
-@each $red, $color in $redes{
-	.red--#{$red}{
-		background-color: $color;
-	}
-};
-
-
-
-

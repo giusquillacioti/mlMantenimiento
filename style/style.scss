@@ -8,24 +8,6 @@
 @import "./imports/portfolio";
 @import "./imports/contacto";
 
-.index{
-    background-image: url("../img/indexbg.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.servicios{
-    background-image: url("../img/servicesbg.jpg");
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.bg{
-    background-image: url('../img/cementbg.jpg');
-    background-size:cover;
-}
-
 @media only screen and (min-width:768px) and (max-width:1023px){
 
     header{
@@ -33,62 +15,91 @@
         grid-template-rows: 1fr;
         grid-template-areas:
         "logo navbar";
-        height: 90px;
+        
+        .logo{
+            img{
+                margin-left: 10px;
+                height: auto;
+            }
+        }
+
+        #navbarNav{
+            justify-content: end;
+            
+            ul{
+                li{
+                    a{
+                        font-size: 15px;
+                        padding: 5px 5px;
+                    }
+                }
+            }
+        }
+        
+        .redesHeader{
+            display: none;
+        }
     }
 
-    .redes{
-        display: none;
+    .index{
+        &--header{
+            #navbarNav{
+                ul{
+                    li{
+                        padding: 0 5px;
+
+                        a{
+                            padding: 5px 10px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .servicios{
+        .trabajos{
+            &--box{
+                width: 750px;
+
+                &--servicio{
+                    width: 110px;
+                    height: 130px;
+                    margin: 8px;
+                }
+            }
+        }
+
+        .info{
+            &--grid{
+                &--box{
+                    width: 750px;
+
+                    &--list{
+                        justify-content: space-evenly;
+                        width: 300px;
+                        height: 250px;
+                    }
+
+                    &--picture{
+                        border: 3px solid black;
+                        img{
+                            width: 350px;
+                            height: 250px;
+                        }
+                    }
+                }
+            }
+        }
     }
     
-    .logo img{
-        margin-left: 10px;
-        height: 80px;
+
+    p{
+        text-align: justify;
     }
 
-    #navbarNav{
-        justify-content: end;
-    }
-
-    #navbarNav ul li a{
-        font-size: 20px;
-        padding: 5px 10px;
-    }
-
-    .thinHeader .mlLogo{
-        height: 60px;
-    }
-
-    .trabajosGrid #trabajos a .servicio{
-        width: 110px;
-        height: 130px;
-        margin: 8px;
-    }
-
-    .trabajosGrid #trabajos{
-        width: 750px;
-    }
-
-    #infoServicios .infoGrid .infoContainer{
-        width: 750px;
-    }
-
-    .infoContainer img{
-        width: 350px;
-        height: 250px;
-    }
-    
-    
-    #infoServicios .infoGrid .infoContainer .divInfo{
-        justify-content: space-evenly;
-        width: 300px;
-        height: 250px;
-    }
-
-    .fotoServicios{
-        border: 3px solid black;
-    }
-
-    #nosotros{
+    .nosotros{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -97,11 +108,7 @@
         "map";
     }
 
-    .info{
-        text-align: justify;
-    }
-
-    .portfolioGrid{
+    .portfolio{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas:
@@ -120,36 +127,35 @@
         grid-template-rows: 1fr;
         grid-template-areas:
         "redes horarios";
-    }
 
-    footer .horariosFooter{
-        grid-area: horarios;
-        justify-content: end;
-        margin-right: 25px;
-    }
+        .horariosFooter{
+            grid-area: horarios;
+            justify-content: end;
+            margin-right: 25px;
+        }
 
-    footer .redesFooter{
-        display: flex;
-        grid-area: redes;
-        justify-content: start;
-        align-items: center;
-        margin-left: 20px;
-    }
+        .redesFooter{
+            display: flex;
+            grid-area: redes;
+            justify-content: start;
+            align-items: center;
+            margin-left: 20px;
 
-    .redesFooter figure{
-        margin-bottom: 0;
-    }
+            figure{
+                margin-bottom: 0;
 
-    .redesFooter img{
-        height: 30px;
-        width: 30px;
-        margin: 5px;
-    }
+                img{
+                    height: 30px;
+                    width: 30px;
+                    margin: 5px;
+                }
+            }
+        }
 
-    footer .whatsappFooter{
-        display: none;
+        .whatsappFooter{
+            display: none;
+        }
     }
-
 }
 
 @media only screen and (max-width:767px){
@@ -159,121 +165,163 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-        "navbar logo"
-        ;
-    }
+        "navbar logo";
+    
+        .redesHeader{
+            display: none;
+        }
+    
+        .logo{
+            align-self: center;
+            justify-content: flex-end;
+            align-items: flex-start;
+            margin: 10px;
+            height: 80px;
 
-    .thinHeader{
-        height: auto;
-    }
+            img{
+                height: 80px;
+                width: 150px;
+            }
+        }
 
-    .redes{
-        display: none;
-    }
-
-    .logo{
-        justify-content: flex-end;
-        align-items: flex-start;
-        margin-top: 10px;
-        margin-right: 15px;
-        height: 80px;
-    }
-
-    .logo img{
-        height: 80px;
-        width: 150px;
-    }
-
-    header nav #navbarNav ul li a{
-        font-size: 20px;
-        padding: 0 10px;
-        background-color: $themeColor;
+        nav{
+            #navbarNav{
+                ul{
+                    li{
+                        a{
+                            font-size: 20px;
+                            padding: 0 10px;
+                            background-color: $themeColor;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .index{
         background-image: url("../img/indexMobilebg.jpg");
+        display: block;
+        
+        &--header{
+            height: auto;
+
+            #navbarNav{
+                ul{
+                    li{
+                        padding: 0 5px;
+
+                        a{
+                            padding: 0px 10px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        main{
+        
+            h1{
+                margin-top: 50px;
+                font-size: 50px;
+            }
+        
+            h2{
+                font-size: 30px;
+            }
+        
+            .italic{
+                font-size: 35px;
+                margin-top: 20px;
+            }
+        
+            section{
+                h3{
+                    font-size: 25px;
+                }
+        
+                .pago{
+                    &--box{
+                        flex-direction: column;
+                        align-items: center;
+                        height: 200px;
+                        width: 250px;
+
+                        div{
+                            figure{
+                                figcaption{
+                                    width: 125px;
+                                    margin-left: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    main h1{
-        margin-top: 50px;
-        font-size: 50px;
-    }
+    .servicios{
 
-    main .sub1{
-        font-size: 30px;
-    }
+        .p{
+            font-size: 20px;
+        }
 
-    main .italic{
-        font-size: 35px;
-        margin-top: 20px;
-    }
+        .trabajos{
+            &--box{
+                width: 300px;
 
-    main section h3{
-        font-size: 25px;
-    }
+                &--servicio{
+                    width: 100px;
+                    height: 130px;
+                    margin: 10px;
 
-    main section .pagoGrid .pagoBox{
-        flex-direction: column;
-        align-items: center;
-        height: 200px;
-        width: 250px;
-    }
+                    figcaption{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
 
-    main section .pagoGrid .pagoBox div figure figcaption{
-        width: 125px;
-        margin-left: 15px;
-    }
+        .info{
+            &--grid{
+                &--box{
+                    flex-direction: column-reverse;
+                    height: 500px;
+                    width: 350px;
+                    justify-content: space-evenly;
 
-    .texto{
-    font-size: 20px;
-    }
+                    &--list{
+                        justify-content: space-evenly;
+                        align-items: center;
+                        width: 300px;
+                        height: 300px;
 
-    .trabajosGrid #trabajos{
-        width: 300px;
-    }
+                        h2{
+                            font-size: 25px;
+                        }
 
-    .trabajosGrid #trabajos a .servicio{
-        width: 100px;
-        height: 130px;
-        margin: 10px;
-    }
+                        a{
+                        margin-bottom: 10px;
+                        padding: 5px 20px;
+                        border-radius: 25px;    
+                        }
+                    }
 
-    .trabajosGrid #trabajos a .servicio figcaption{
-        font-size: 13px;
-    }
+                    &--picture{
+                        margin-top: 15px;
+                        border: 3px solid black;
 
-    #infoServicios .infoGrid .infoContainer{
-        flex-direction: column-reverse;
-        height: 500px;
-        width: 350px;
-        justify-content: space-evenly; 
-    }
+                        img{
+                            width: 280px;
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+        }
 
-    .infoContainer img{
-        width: 280px;
-        height: 180px;
-    }
-    
-    #infoServicios .infoGrid .infoContainer .divInfo{
-        justify-content: space-evenly;
-        align-items: center;
-        width: 300px;
-        height: 300px;
-    }
-
-    #infoServicios .infoGrid .infoContainer .divInfo h2{
-        font-size: 25px;
-    }
-
-    #infoServicios .infoGrid .infoContainer .divInfo a{
-        margin-bottom: 10px;
-        padding: 5px 20px;
-        border-radius: 25px;
-    }
-    
-    .fotoServicios{
-        margin-top: 15px;
-        border: 3px solid black;
     }
 
     .bg{
@@ -285,61 +333,61 @@
         font-size: 35px;
     }
 
-    #nosotros{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-        "reviews"
-        "map";
-    }
-
-    .info{
+    p{
         text-align: justify;
         font-size: 20px;
+        margin: 25px 50px 35px;
         padding: 0;
     }
 
-    #nosotros .nosotrosGrid .nosotrosColumnas{
-        width: 350px;
-        height: auto;
+    .nosotros{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        ". reviews ."
+        ". map .";
+
+        &--column{
+            &--box{
+                width: 350px;
+                height: auto;
+
+                h2{
+                    margin-top: 0;
+                    font-size: 25px;
+                }
+
+                &--reviews{
+                    figure{
+                        .reviewsDesktop{
+                            display: none;
+                        }
+                        .reviewsMobile{
+                                display: block;
+                                height: 150px;
+                                width: 240px;
+                        }
+                    }
+
+                    &--buttons{
+                        flex-direction: column;
+                        padding: 0 0 15px;
+                        
+                        a{
+                            padding: 10px;
+                        }
+                    }
+                }
+                
+                iframe{
+                    width: 300px;
+                    height: 310px;
+                }
+            }
+        }
     }
 
-    #nosotros .nosotrosGrid .nosotrosColumnas h2{
-        margin-top: 0;
-        font-size: 25px;
-    }
-
-    #nosotros .nosotrosGrid .nosotrosColumnas .reviewsDesktop{
-        display: none;
-    }
-
-    #nosotros .nosotrosGrid .nosotrosColumnas .googleReviews figure .reviewsMobile{
-        display: block;
-        height: 150px;
-        width: 240px;
-    }
-
-    #nosotros .nosotrosGrid .nosotrosColumnas .googleReviews .buttons{
-        flex-direction: column;
-        padding: 0 0 15px;
-    }
-
-    #nosotros .nosotrosGrid .nosotrosColumnas .googleReviews .buttons a{
-        padding: 10px;
-    }
-
-    #nosotros .nosotrosGrid .nosotrosColumnas iframe{
-        width: 300px;
-        height: 310px;
-    }
-
-    .sub2{
-        font-size: 25px;
-        margin-bottom: 0;
-    }
-
-    .portfolioGrid{
+    .portfolio{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas:
@@ -347,14 +395,18 @@
         "second"
         "third"
         "fourth";
-    }
+    
+    &--carousels{
+        &--style{
+            width: 350px;
 
-    .portfolioGrid .gridCarousels .carouselStyle{
-        width: 350px;
+            h3{
+                font-size: 15px;
+            }
+        }
     }
-
-    .portfolioGrid .gridCarousels .carouselStyle h3{
-        font-size: 15px;
+    
+    
     }
 
     .form{
@@ -368,32 +420,31 @@
         grid-template-areas:
         "horarios"
         "redes";
-    }
 
-    footer .whatsappFooter{
-        display: none;
-    }
+        .whatsappFooter{
+            display: none;
+        }
 
-    footer .horariosFooter{
-        grid-area: horarios;
-        justify-content: center;
-        margin-top: 10px;
-    }
+        .horariosFooter{
+            grid-area: horarios;
+            justify-content: center;
+            margin-top: 10px;
+        }
 
-    footer .redesFooter{
-        display: flex;
-        grid-area: redes;
-        justify-content: center;
-    }
+        .redesFooter{
+            display: flex;
+            grid-area: redes;
+            justify-content: center;
 
-    .redesFooter figure{
-        margin-bottom: 0;
+            figure{
+                margin-bottom: 0;
+                
+                img{
+                    height: 30px;
+                    width: 30px;
+                    margin: 10px;
+                }
+            }
+        }
     }
-
-    .redesFooter img{
-        height: 30px;
-        width: 30px;
-        margin: 10px;
-    }
-
 }

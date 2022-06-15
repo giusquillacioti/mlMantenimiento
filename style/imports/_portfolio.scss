@@ -1,4 +1,4 @@
-.portfolioGrid{
+.portfolio{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -6,12 +6,12 @@
     "first second"
     "third fourth";
 
-    .gridCarousels{
+    &--carousels{
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .carouselStyle{
+        &--style{
             @extend.box;
             margin: 20px;
             padding: 10px;
