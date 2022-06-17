@@ -2,9 +2,10 @@
     background-image: url("../img/indexbg.jpg");
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
     "header"
     "main"
