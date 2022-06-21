@@ -384,6 +384,7 @@ footer .redesFooter {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
       grid-template-areas: ". trabajos .";
+  scroll-margin-top: 200px;
 }
 
 .servicios .trabajos--box {
@@ -485,6 +486,7 @@ footer .redesFooter {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  scroll-margin-top: 250px;
 }
 
 .servicios .info--grid--box--list {

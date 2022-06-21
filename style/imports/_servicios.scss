@@ -19,6 +19,7 @@
         grid-template-rows: 1fr;
         grid-template-areas:
         ". trabajos .";
+        scroll-margin-top: 200px;
         
         &--box{
             margin: 15px;
@@ -87,6 +88,7 @@
                 width: 900px;
                 justify-content: space-evenly;
                 align-items: center;
+                scroll-margin-top: 250px;
                 
                 &--list{
                     display: flex;
